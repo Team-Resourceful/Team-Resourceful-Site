@@ -24,7 +24,7 @@ blockquote {
 
     border-radius: var(--small-button-radius);
 
-    width: max-content;
+    width: fit-content;
 }
 
 summary {
