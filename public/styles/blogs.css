@@ -43,7 +43,9 @@
 }
 
 .item-text {
-    height: 270px;
+    height: 250px;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .item-text h1 {
