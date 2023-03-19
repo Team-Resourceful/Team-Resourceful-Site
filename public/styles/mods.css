@@ -28,9 +28,16 @@
 
 .item-content {
     display: grid;
-    grid-template-rows: auto 58px;
+    grid-template-rows: calc(100% - 78px) 58px;
 
     padding-right: 30px;
+
+    height: 300px;
+    row-gap: 20px;
+}
+
+.item-text {
+    overflow: hidden;
 }
 
 .item-text > h1 {
@@ -76,6 +83,12 @@
         grid-template-columns: 1fr;
     }
     .item > img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item-links > a:nth-child(n + 4) {
         display: none;
     }
 }
