@@ -61,12 +61,16 @@
 
 @media screen and (max-width: 700px) {
     .content {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+
         grid-template-areas:
         "top"
         "left"
         "right";
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
 
         grid-template-rows: auto auto auto;
     }
