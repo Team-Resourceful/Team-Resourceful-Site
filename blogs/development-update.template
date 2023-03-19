@@ -1,0 +1,28 @@
+$html:
+blog.html
+
+$id:
+development-update
+
+$title:
+Development Update
+
+$description:
+Resourceful Bees for 1.19.2 is nearing an official public release. We privately informed our Patrons and Discord boosters about an alpha test and mentioned it a few times in our general chat in discord. We also posted an announcement of the test, but we didn’t take the liberty in alerting everyone. Well, now we are!
+
+$color:
+#03fcc2
+
+$date:
+2022-11-09
+
+$image:
+assets/cover.png
+
+$tags:
+Development,
+Update,
+1.19
+
+$md:
+development-update.md

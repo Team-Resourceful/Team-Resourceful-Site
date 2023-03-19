@@ -1,0 +1,27 @@
+$html:
+blog.html
+
+$id:
+world-bee-day-2022
+
+$title:
+World Bee Day 2022
+
+$description:
+May 20, 2022 is World Bee day. In celebration, we at Team Resourceful will give every player a cosmetic bee in-game from May 15th to May 22nd.
+
+$color:
+#e06359
+
+$date:
+2022-05-12
+
+$image:
+assets/blogs/world-bee-day.png
+
+$tags:
+Event,
+Bee Day
+
+$md:
+world-bee-day-2022.md

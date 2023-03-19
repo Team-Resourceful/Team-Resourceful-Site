@@ -1,0 +1,113 @@
+[
+    {
+        "title": "Resourceful Bees",
+        "description": "Resourceful Bees is a mod made for pack developers that allow near unlimited possibilities for bees, our bees can be fully customized to your liking.",
+        "image": "assets/cover.png",
+        "links": [
+            {
+                "url": "https://modrinth.com/mod/resourceful-bees",
+                "icon": "modrinth"
+            },
+            {
+                "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-bees",
+                "icon": "curseforge"
+            },
+            {
+                "url": "https://github.com/team-resourceful/resourcefulbees",
+                "icon": "github"
+            },
+            {
+                "url": "https://wiki.resourcefulbees.com",
+                "icon": "file-code"
+            }
+        ]
+    },
+    {
+        "title": "Lootbags",
+        "description": "Lootbags provides pack developers away to give custom loot to players in a bag without the hassle by just creating a simple json file.",
+        "image": "assets/mods/lootbags.png",
+        "links": [
+            {
+                "url": "https://modrinth.com/mod/resourceful-lootbags",
+                "icon": "modrinth"
+            },
+            {
+                "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lootbags",
+                "icon": "curseforge"
+            },
+            {
+                "url": "https://github.com/team-resourceful/resourceful-lootbags",
+                "icon": "github"
+            },
+            {
+                "url": "https://lootbags.wiki.teamresourceful.com/",
+                "icon": "file-code"
+            }
+        ]
+    },
+    {
+        "title": "Highlight",
+        "description": "Highlight is a mod that improves the Minecraft selection box system by allowing for resourcepack created non axis aligned selection boxes.",
+        "image": "assets/mods/highlight.png",
+        "links": [
+            {
+                "url": "https://modrinth.com/mod/highlight",
+                "icon": "modrinth"
+            },
+            {
+                "url": "https://www.curseforge.com/minecraft/mc-mods/highlight",
+                "icon": "curseforge"
+            },
+            {
+                "url": "https://github.com/team-resourceful/highlight",
+                "icon": "github"
+            },
+            {
+                "url": "https://lib.wiki.teamresourceful.com/",
+                "icon": "file-code"
+            }
+        ]
+    },
+    {
+        "title": "Resourceful Config",
+        "description": "Resourceful config provides a cross-platform solution to configs with an included web interface and in-game config editor.",
+        "image": "assets/mods/config.png",
+        "links": [
+            {
+                "url": "https://modrinth.com/mod/resourceful-config",
+                "icon": "modrinth"
+            },
+            {
+                "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-config",
+                "icon": "curseforge"
+            },
+            {
+                "url": "https://github.com/team-resourceful/resourceful-config",
+                "icon": "github"
+            }
+        ]
+    },
+    {
+        "title": "Resourceful Lib",
+        "description": "Resourceful Lib is a mod that adds a library to the game.",
+        "image": "assets/mods/lib.png",
+        "links": [
+            {
+                "url": "https://modrinth.com/mod/resourceful-lib",
+                "icon": "modrinth"
+            },
+            {
+                "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lib",
+                "icon": "curseforge"
+            },
+            {
+                "url": "https://github.com/team-resourceful/resourceful-lib",
+                "icon": "github"
+            },
+            {
+                "url": "https://lib.wiki.teamresourceful.com/",
+                "icon": "file-code"
+            }
+        ]
+    }
+]

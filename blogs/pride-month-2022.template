@@ -1,0 +1,27 @@
+$html:
+blog.html
+
+$id:
+pride-month-2022
+
+$title:
+Happy Pride Month
+
+$description:
+Happy Pride Month from Team Resourceful. In celebration, we at Team Resourceful will give every player the ability to have a cosmetic bee in-game.
+
+$color:
+#03fcc2
+
+$date:
+2022-06-01
+
+$image:
+assets/blogs/pride.png
+
+$tags:
+Event,
+Pride
+
+$md:
+pride-month-2022.md
