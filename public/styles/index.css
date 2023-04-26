@@ -1,14 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap');
 
-:root {
+html.lightmode {
+    --background-color: #FFFFFF;
+    --container-color: #F1F1F1;
+
+    --accent-color: #BCBCBC;
+
+    --text-title-color: #292929;
+    --text-paragraph-color: #424245;
+    --text-button-color: #FAF9F6;
+
+    --button-color: #bdbdbd;
+    --button-transparent-color: rgba(189, 189, 189, 0.5);
+    --button-hover-color: #ababab;
+
+    --highlight-color: #EF5552;
+    --highlight-hover-color: #F56A67;
+
+    --card-radius: 15px;
+    --small-button-radius: 5px;
+    --medium-button-radius: 10px;
+
+    --theme-icon: url("/assets/lucide/sun.svg");
+    --theme-icon-opposite: url("/assets/lucide/moon.svg");
+}
+
+html:not(.lightmode) {
     --background-color: #131517;
     --container-color: #1A1C20;
 
     --accent-color: #27282C;
 
     --text-title-color: #FAF9F6;
-    --text-button-color: #B6B6B6;
     --text-paragraph-color: #727478;
+    --text-button-color: #FAF9F6;
 
     --button-color: #27282C;
     --button-transparent-color: rgba(39, 40, 44, 0.5);
@@ -20,6 +45,9 @@
     --card-radius: 15px;
     --small-button-radius: 5px;
     --medium-button-radius: 10px;
+
+    --theme-icon: url("/assets/lucide/moon.svg");
+    --theme-icon-opposite: url("/assets/lucide/sun.svg");
 }
 
 body, html {
@@ -86,6 +114,25 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span, li, figcaption {
     color: var(--text-paragraph-color);
+}
+
+.theme-switcher {
+
+    background: var(--theme-icon-opposite) no-repeat center, var(--button-color);
+
+    position: fixed;
+    width: 36px;
+    aspect-ratio: 1/1;
+
+    bottom: 10px;
+    right: 10px;
+
+    border-radius: var(--small-button-radius);
+}
+
+.theme-switcher:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-color);
 }
 
 @media screen and (max-width: 1000px) {

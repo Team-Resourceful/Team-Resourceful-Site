@@ -4,7 +4,7 @@
     margin-right: 15%;
     padding: 30px;
 
-    color: white;
+    color: var(--text-title-color);
 
     background-color: var(--container-color);
 
@@ -17,7 +17,7 @@
 
 blockquote {
     margin: 0;
-    color: var(--text-button-color);
+    color: var(--text-title-color);
     border-left: var(--button-hover-color) 5px solid;
     padding: 5px;
     background-color: var(--accent-color);
