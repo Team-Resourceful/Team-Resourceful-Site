@@ -12,7 +12,7 @@ export class Blogs {
         const template = fs.readFileSync(process.cwd() + "/templates/blog.html", "utf8");
 
         if (fs.existsSync(process.cwd() + "/dist_blogs")) {
-            fs.rmSync(process.cwd() + "/dist_blogs", { recursive: true });
+            fs.rmSync(process.cwd() + "/dist_blogs", {recursive: true});
         }
         fs.mkdirSync(process.cwd() + "/dist_blogs");
         fs.readdirSync(process.cwd() + "/blogs").forEach((file) => {
@@ -22,11 +22,13 @@ export class Blogs {
             }
         });
 
-        Blogs.sortedByDate = Array.from(Blogs.blogs.values()).sort((a, b) => {
-            const dateA = new Date(a.date);
-            const dateB = new Date(b.date);
-            return dateB.getTime() - dateA.getTime();
-        });
+        Blogs.sortedByDate = Array.from(Blogs.blogs.values())
+            .filter((blog) => !blog.hidden)
+            .sort((a, b) => {
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                return dateB.getTime() - dateA.getTime();
+            });
     }
 
     public static getBlogs(): Blog[] {
@@ -50,7 +52,8 @@ export class Blogs {
             description: injections.get("description"),
             date: injections.get("date") || "Unknown",
             image: injections.get("image") || "assets/lucide/activity.svg",
-            tags: injections.get("tags") ? injections.get("tags")!!.split(",") : []
+            tags: injections.get("tags") ? injections.get("tags")!!.split(",") : [],
+            hidden: injections.get("hidden") === "true"
         } as Blog;
 
         Blogs.blogs.set(blog.id, blog);
@@ -86,4 +89,5 @@ export interface Blog {
     tags: string[];
     date: string;
     id: string;
+    hidden: boolean;
 }
