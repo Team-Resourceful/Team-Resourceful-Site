@@ -1,0 +1,32 @@
+$html:
+blog.html
+
+$id:
+pride-23-and-1-20-update
+
+$title:
+Pride 2023 and 1.20 Update
+
+$description:
+Team Resourceful Mods will be updating to Minecraft 1.20 and Pride Pet Bees are available to everyone.
+
+$color:
+#03fcc2
+
+$date:
+2023-06-01
+
+$image:
+assets/cover.png
+
+$tags:
+Pride,
+Development,
+Update,
+1.20
+
+$md:
+pride-23-and-1-20-update.md
+
+$hidden:
+true
