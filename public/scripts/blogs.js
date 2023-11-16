@@ -65,7 +65,7 @@ function createBlogEntry(blog) {
     return item;
 }
 
-const blogsApiUrl = `${location.protocol}//${location.host}/api/blogs`;
+const blogsApiUrl = `${location.protocol}//${location.host}/api/blogs.json`;
 
 fetch(blogsApiUrl)
     .then(response => response.json())

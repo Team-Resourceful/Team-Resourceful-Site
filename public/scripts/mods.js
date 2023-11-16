@@ -46,7 +46,7 @@ function createModEntry(mod) {
     return item;
 }
 
-const modsApiUrl = `${location.protocol}//${location.host}/api/mods`;
+const modsApiUrl = `${location.protocol}//${location.host}/api/mods.json`;
 
 fetch(modsApiUrl)
     .then(response => response.json())
