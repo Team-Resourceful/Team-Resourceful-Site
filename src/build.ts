@@ -11,14 +11,14 @@ if (fs.existsSync(process.cwd() + OUTPUT_DIR)) {
 fs.mkdirSync(process.cwd() + OUTPUT_DIR);
 fs.cpSync(process.cwd() + "/public", process.cwd() + OUTPUT_DIR, { recursive: true });
 
-fs.mkdirSync(process.cwd() + OUTPUT_DIR + "/blogs");
+fs.mkdirSync(process.cwd() + OUTPUT_DIR + "/blog");
 fs.mkdirSync(process.cwd() + OUTPUT_DIR + "/api");
 
 fs.readdirSync(process.cwd() + "/blogs").forEach((file) => {
     if (file.endsWith(".template")) {
         const data = fs.readFileSync(process.cwd() + "/blogs/" + file, "utf8");
         const builtBlog = Utils.createBlogHtmlFile(data, BLOG_TEMPLATE);
-        fs.writeFileSync(process.cwd() + OUTPUT_DIR + "/blogs/" + builtBlog.blog.id + ".html", builtBlog.html);
+        fs.writeFileSync(process.cwd() + OUTPUT_DIR + "/blog/" + builtBlog.blog.id + ".html", builtBlog.html);
         BLOGS.push(builtBlog.blog);
     }
 });
